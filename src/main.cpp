@@ -13,8 +13,8 @@
 #include <Adafruit_BMP085.h>
 
 // Replace with your network credentials
-const char *ssid = "TPlinkerpav";
-const char *password = "1F7?5n14";
+const char *ssid = "your ssid";
+const char *password = "your pass";
 
 // uncomment one of the lines below for whatever DHT sensor type you're using
 #define DHTTYPE DHT11   // DHT 11
@@ -53,7 +53,7 @@ WiFiServer server(80);
 void setup()
 {
     // initialize serial port
-    Serial.begin(9600);
+    Serial.begin(115200);
 
     // initialize DHT sensor
     dht.begin();
